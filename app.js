@@ -1,5 +1,6 @@
 var express = require( "express" );
 var app = express();
+var port = process.env.YOUR_PORT || process.env.PORT || 80;
 
 app.get('/', function (req, res) {
   res.send('Hello World!')
@@ -15,6 +16,6 @@ app.get('/webhook', function(req, res) {
   }
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log('Example app listening on port 3000!')
 })
