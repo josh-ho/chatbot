@@ -1,0 +1,22 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot for FB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josh-ho/chatbot.git"
+  },
+  "author": "Joshua Ho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josh-ho/chatbot/issues"
+  },
+  "homepage": "https://github.com/josh-ho/chatbot#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
