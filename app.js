@@ -1,6 +1,6 @@
 var express = require( "express" );
 var app = express();
-var port = 80; //process.env.YOUR_PORT || process.env.PORT || 
+var port = process.env.YOUR_PORT || process.env.PORT || 80;
 
 const PAGE_ACCESS_TOKEN = "EAACnvqZA7eqwBAPKOGmCDAZAD9QN7nUAp3bA6mDQDZBsl78MKq6uVRi05p0cL0z1DgU3K1yHqwZBqeDNebgSoMgQVWCW0RRKSYJRuB19UM6r7fdcx7EZCOSvKndOS1cGkChtYPYKQCpLdzwdbr5maWoNMVCEdHtT4OqcsDVPc0AZDZD"; //page used: Rrydjdjytjdtyyyyyy
 
