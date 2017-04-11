@@ -142,7 +142,7 @@ app.get('/', function (req, res) {
 app.get('/webhook', function(req, res) {
   if (req.query['hub.mode'] === 'subscribe' && req.query['hub.verify_token'] === "this_is_a_prototype" ) {
     console.log("Validating webhook");
-    .send(req.query['hub.challenge']);
+    res.status(200).send(req.query['hub.challenge']);
 
     var data = req.body;
     if( data.object === "page" ){
