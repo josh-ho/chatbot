@@ -140,7 +140,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/webhook', function(req, res) {
-  console.log( JSON.stringify(req) );
+  console.log( req );
   if (req.query['hub.mode'] === 'subscribe' && req.query['hub.verify_token'] === "this_is_a_prototype" ) {
     console.log("Validating webhook");
     res.status(200).send(req.query['hub.challenge']);
